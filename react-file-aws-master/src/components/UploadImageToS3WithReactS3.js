@@ -1,7 +1,7 @@
 import React , {useState} from 'react';
 import { uploadFile } from 'react-s3';
 import '../assets/css/UploadImageToS3WithReactS3.css';
-
+import logo from '../assets/img/01.png';
 
 const S3_BUCKET =process.env.REACT_APP_BUCKET_NAME;
 const REGION =process.env.REACT_APP_REGION;
@@ -30,10 +30,12 @@ const UploadImageToS3WithReactS3 = () => {
     }
 
     return  <div className="b">
-                <div className="titulo"><h2>React S3 File Upload</h2></div>
+                <div className="titulo"><h2>Nueva Carga de Imagenes, productos 2021</h2></div>
+                <img src={logo}></img>
+                <div className="titulo"><h4>Ignovando, para servir mejor!</h4></div>
                 <input type="file" onChange={handleFileInput}/>
                 <div><br></br></div> 
-                <button onClick={() => handleUpload(selectedFile)}> Upload to S3</button>
+                <button onClick={() => handleUpload(selectedFile)}>Envio</button>
             </div>
 }
 
