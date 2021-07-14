@@ -21,11 +21,14 @@ button{
 }
 
 input{
-       border:0;
-       background-color: white;
-       font-family: Lato; 
+        border:0;
+        background-color: white;
+        font-family: Lato; 
         margin-right: 20%;
         font-size: 15px;
         border: 1px;
+}
 
+button:hover{
+    background-color: blue;
 }
