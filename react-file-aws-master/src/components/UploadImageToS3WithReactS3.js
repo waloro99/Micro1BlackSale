@@ -29,11 +29,12 @@ const UploadImageToS3WithReactS3 = () => {
             .catch(err => console.error(err))
     }
 
-    return <div className="b">
-        <div>React S3 File Upload</div>
-        <input type="file" onChange={handleFileInput}/>
-        <button onClick={() => handleUpload(selectedFile)}> Upload to S3</button>
-    </div>
+    return  <div className="b">
+                <div className="titulo"><h2>React S3 File Upload</h2></div>
+                <input type="file" onChange={handleFileInput}/>
+                <div><br></br></div> 
+                <button onClick={() => handleUpload(selectedFile)}> Upload to S3</button>
+            </div>
 }
 
 export default UploadImageToS3WithReactS3;
