@@ -32,7 +32,7 @@ const UploadImageToS3WithReactS3 = () => {
     return  <div className="b">
                 <div className="titulo"><h2>Nueva Carga de Imagenes, productos 2021</h2></div>
                 <img src={logo}></img>
-                <div className="titulo"><h4>Ignovando, para servir mejor!</h4></div>
+                <div className="titulo"><h4>Innovando, para servir mejor!</h4></div>
                 <input type="file" onChange={handleFileInput}/>
                 <div><br></br></div> 
                 <button onClick={() => handleUpload(selectedFile)}>Envio</button>
